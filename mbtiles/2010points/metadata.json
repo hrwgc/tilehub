@@ -1,0 +1,13 @@
+grid({
+    "attribution": "", 
+    "description": "", 
+    "center": "-73.9157,40.6702,13", 
+    "bounds": "-74.4516,40.4611,-73.4079,41.0354", 
+    "minzoom": "12", 
+    "version": "1.0.0", 
+    "maxzoom": "15", 
+    "name": "2010 All Stops",
+    "scheme": "xyz",
+    "tiles": ["\/tilehub\/mbtiles\/2010points\/1.0.0\/points\/{z}\/{x}\/{y}.png"],
+    "grids": ["\/tilehub\/mbtiles\/2010points\/1.0.0\/points\/{z}\/{x}\/{y}.grid.json"]
+})
