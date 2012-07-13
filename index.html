@@ -50,7 +50,7 @@
             function(tilejson) {
               map = new L.Map('map-div')
                 .addLayer(new wax.leaf.connector(tilejson))
-                .setView(new L.LatLng(-73.8968,40.7259), 12);
+                .setView(new L.LatLng(40.7259,-73.8968), 12);
               interaction = wax.leaf.interaction(map, tilejson);
           });
         });
