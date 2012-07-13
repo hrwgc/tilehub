@@ -8,6 +8,6 @@ grid({
     "maxzoom": "15", 
     "name": "contours",
     "scheme": "xyz",
-    "tiles":["\/mbtiles\/2010contours\/1.0.0\/contours\/{z}\/{x}\/{y}.png"],
-    "grids":["\/mbtiles\/2010contours\/1.0.0\/contours\/{z}\/{x}\/{y}.grid.json"]
+    "tiles":["\/tilehub\/mbtiles\/2010contours\/1.0.0\/contours\/{z}\/{x}\/{y}.png"],
+    "grids":["\/tilehub\/mbtiles\/2010contours\/1.0.0\/contours\/{z}\/{x}\/{y}.grid.json"]
 })
