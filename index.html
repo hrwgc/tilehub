@@ -1,0 +1,62 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <title>Stop and Frisk</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lte IE 8]><link rel="stylesheet" href="js/ext/wax/ext/leaflet.ie.css" /><![endif]-->
+    <script src="js/ext/wax/ext/leaflet.js"></script>
+    <script src='js/ext/wax/dist/wax.leaf.min.js' type='text/javascript'></script>
+    <link rel="stylesheet" href="js/ext/wax/ext/leaflet.css" />
+    <script type="text/javascript" src="js/ext/jquery/jquery-1.7.2.min.js"></script>
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="js/ext/wax/ext/leaflet.ie.css" />
+    <![endif]-->
+    <style rel="stylesheet" type="text/css">
+
+    .wax-tooltip {
+      position: absolute;
+      right:0px;
+      top:0px;
+      padding:10px;
+      background-color:#FFFFFF;
+	background-image: linear-gradient(top, rgb(0,0,0) 0%, rgb(0,0,0) 1%, rgb(0,0,0) 1%, rgb(0,0,4) 1%, rgb(0,0,4) 2%, rgb(0,0,4) 2%, rgb(0,0,4) 2%, rgb(0,4,8) 3%, rgb(0,4,8) 3%, rgb(0,4,8) 3%, rgb(0,4,8) 4%, rgb(0,4,12) 4%, rgb(0,4,12) 4%, rgb(0,4,12) 4%, rgb(0,4,12) 5%, rgb(4,8,16) 5%, rgb(4,8,16) 5%, rgb(4,8,16) 6%, rgb(4,8,16) 6%, rgb(4,8,20) 6%, rgb(4,8,20) 6%, rgb(4,8,20) 7%, rgb(4,8,20) 8%, rgb(4,12,24) 8%, rgb(4,12,24) 8%, rgb(4,12,24) 8%, rgb(4,12,24) 9%, rgb(4,12,28) 9%, rgb(4,12,28) 9%, rgb(4,12,28) 10%, rgb(4,12,28) 10%, rgb(8,16,32) 10%));
+
+      opacity:0.9;
+      border-radius: 10px;
+      -moz-border-radius: 10px;
+      width: 300px;
+      z-index: 5;
+    }
+
+    body{
+      padding: 0px;
+      margin: 0px;
+    }
+    
+
+    </style>
+  </head>
+
+  <body>
+        <div id="map-div" style="width: 100%; height: 100%"></div>
+        </body>
+        <script type="text/javascript">
+
+        var map;
+        var interaction;
+
+        $(document).ready(function() {
+          wax.tilejson('2010contours/metadata.json',
+            function(tilejson) {
+              map = new L.Map('map-div')
+                .addLayer(new wax.leaf.connector(tilejson))
+                .setView(new L.LatLng(38.9026,-100), 4);
+              interaction = wax.leaf.interaction(map, tilejson);
+          });
+        });
+
+        </script>
+  </body>
+</html>

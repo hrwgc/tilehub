@@ -1,0 +1,13 @@
+grid({
+    "attribution": "", 
+    "description": "", 
+    "center": "-73.8968,40.7259,12", 
+    "bounds": "-74.2538,40.5159,-73.5535,40.984", 
+    "minzoom": "10", 
+    "version": "1.0.0", 
+    "maxzoom": "15", 
+    "name": "contours",
+    "scheme": "tms",
+    "tiles":["1.0.0/contours/{z}/{x}/{y}.png"],
+    "grids":["1.0.0/contours/{z}/{x}/{y}.grid.json"]
+})
