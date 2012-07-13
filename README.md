@@ -4,7 +4,7 @@
 
 This project was inspired by Bobby Sudekum's [TileMill without the Box](http://www.visuallybs.com/no-box/).
 
-Making a few simple modifications to his code, I was able to create [tilehub](http://hrwgc.github.com/tilehub/), which serves map tiles rendered in [TileMill][http://mapbox.com/tilemill/] via GitHub pages. Everything is contained in the repo itself.
+Making a few simple modifications to his code, I was able to create [tilehub](http://hrwgc.github.com/tilehub/), which serves map tiles rendered in [TileMill](http://mapbox.com/tilemill/) via GitHub pages. Everything is contained in the repo itself.
 
 ### Steps
 
@@ -34,4 +34,4 @@ grid({
     "grids": ["\/tilehub\/mbtiles\/2010contours\/1.0.0\/contours\/{z}\/{x}\/{y}.grid.json"]
 })
 </pre>
-5. Link to leaflet, wax, and jquery.
+
