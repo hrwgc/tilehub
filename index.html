@@ -20,9 +20,7 @@
       right:0px;
       top:0px;
       padding:10px;
-      background-color:#FFFFFF;
-	background-image: linear-gradient(top, rgb(0,0,0) 0%, rgb(0,0,0) 1%, rgb(0,0,0) 1%, rgb(0,0,4) 1%, rgb(0,0,4) 2%, rgb(0,0,4) 2%, rgb(0,0,4) 2%, rgb(0,4,8) 3%, rgb(0,4,8) 3%, rgb(0,4,8) 3%, rgb(0,4,8) 4%, rgb(0,4,12) 4%, rgb(0,4,12) 4%, rgb(0,4,12) 4%, rgb(0,4,12) 5%, rgb(4,8,16) 5%, rgb(4,8,16) 5%, rgb(4,8,16) 6%, rgb(4,8,16) 6%, rgb(4,8,20) 6%, rgb(4,8,20) 6%, rgb(4,8,20) 7%, rgb(4,8,20) 8%, rgb(4,12,24) 8%, rgb(4,12,24) 8%, rgb(4,12,24) 8%, rgb(4,12,24) 9%, rgb(4,12,28) 9%, rgb(4,12,28) 9%, rgb(4,12,28) 10%, rgb(4,12,28) 10%, rgb(8,16,32) 10%));
-
+      background-color:#eee;
       opacity:0.9;
       border-radius: 10px;
       -moz-border-radius: 10px;
@@ -48,7 +46,7 @@
         var interaction;
 
         $(document).ready(function() {
-          wax.tilejson('2010contours/metadata.json',
+          wax.tilejson('mbtiles/2010contours/metadata.json',
             function(tilejson) {
               map = new L.Map('map-div')
                 .addLayer(new wax.leaf.connector(tilejson))
